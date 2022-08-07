@@ -1,0 +1,173 @@
+.heading {
+    /* alter */
+    background-color: rgb(2, 183, 255);
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.heading h1 {
+    /* alter */
+    text-shadow: 2px 2px gray;
+}
+
+#add-task {
+    background-color: white;
+    color: blue;
+    font-weight: 800;
+    font-size: larger;
+    border-radius: 50%;
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+    transition: 00.4s;
+}
+
+#add:hover {
+    width: 41px;
+    height: 41px;
+    font-size: x-large;
+}
+
+#lists {
+    color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 30px;
+}
+
+#lists p {
+    text-align: end;
+    color: gray;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+section .list {
+    width: 100%;
+    border: none;
+}
+
+.list {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 30px;
+    /* alter */
+    box-shadow: 1px 1px 1px 1px gray;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.list input {
+    height: max-content;
+    width: 100%;
+    font-size: larger;
+    color: black;
+    background-color: transparent;
+    border: none;
+}
+
+.list button {
+    position: relative;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 30px;
+    border: none;
+    background-image: linear-gradient(to right, red, red 2%, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    /* alter */
+    border-radius: 40%;
+}
+
+.list button:hover {
+    transition-duration: 0.1s;
+    font-size: 33px;
+}
+
+.list button:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+}
+
+.list button:active:after {
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    opacity: 1;
+    transition: 0s;
+}
+
+.list button:active {
+    top: 1px;
+}
+
+.buttons {
+    margin-left: 20px;
+    position: relative;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+    background-image: linear-gradient(to right, red, red 2%, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s;
+    -webkit-transition-duration: 0.4s;
+}
+
+.buttons:hover {
+    transition-duration: 0.1s;
+    font-size: 20px;
+}
+
+.buttons:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 20px white;
+}
+
+.buttons:active:after {
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    opacity: 1;
+    transition: 0s;
+}
+
+.buttons:active {
+    top: 1px;
+}

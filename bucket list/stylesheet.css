@@ -1,0 +1,177 @@
+/* alter */
+
+.bg {
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    min-height: 300px;
+}
+
+.profile {
+    padding: 20px 20px;
+    margin: auto;
+    position: relative;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 2px 2px;
+    min-width: 200px;
+    max-width: 400px;
+    height: 100%;
+    border-radius: 25px;
+    /* alter */
+    background-image: repeating-linear-gradient(to bottom right, rgb(2, 183, 255), lightgray, rgb(0, 183, 255));
+}
+
+#photo {
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+#pic {
+    width: 100%;
+    height: 100%;
+}
+
+#file {
+    display: none;
+}
+
+#upload {
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* alter */
+    top: 210px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: wheat;
+    line-height: 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+#name {
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.actions,
+#edit,
+#addtodo {
+    position: relative;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 30px;
+    border: none;
+    background-image: linear-gradient(to right, red, red 2%, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s;
+    -webkit-transition-duration: 0.4s;
+}
+
+#edit {
+    font-size: 40px;
+}
+
+.actions:hover,
+#edit:hover,
+#addtodo:hover {
+    transition-duration: 0.1s;
+    font-size: 33px;
+}
+
+.actions:after,
+#edit:after,
+#addtodo:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 5px 20px white;
+}
+
+.actions:active:after,
+#edit:active:after,
+#addtodo:active:after {
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    opacity: 1;
+    transition: 0s;
+}
+
+.actions:active,
+#edit:active,
+#addtodo:active {
+    top: 1px;
+}
+
+.count {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* alter */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.505), rgba(0, 0, 0, 0.79));
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px solid black;
+}
+
+.count p {
+    /* alter */
+    font-size: larger;
+    font-weight: 900;
+    color: white;
+}
+
+.count div {
+    font-size: x-large;
+    font-weight: 700;
+    padding: 10px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 2px 2px;
+}
+
+#lower {
+    margin-left: 4%;
+    margin-right: 4%;
+    border-radius: 30px;
+}
